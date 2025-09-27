@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My-Contact-Project</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="search-box">
+      <input type="text" placeholder="Search contact... ( name or phone number )">
+      <button>🔍</button>
+      <button>☰</button>
+      <button id="darkmode">Dark Mode</button>
+      <button id="lightmode">Light Mode</button>
+
+    </div>
+
+    <div class="form-box">
+      <input  class="form-text-input"  type="text" placeholder="Contact Name">
+      <input class="form-number-input" type="text" placeholder="Phone Number">
+      <button class="add-contact-button" >Add Contact</button>
+    </div>
+
+    <div class="contacts">
+      <span class="loader"></span>
+      <div class="private-contacts">
+        <div class="my-contact"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./main.js"></script>
+</body>
+
+</html>

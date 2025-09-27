@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 100px;
+  background: linear-gradient(135deg, #3c0a64, #4a007d);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background: rgba(60, 0, 100, 0.7);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  width: 600px;
+  max-width: 90%;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 14px;
+}
+
+.search-box button {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  margin-left: 8px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+}
+
+.form-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.form-box input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 14px;
+}
+
+.form-box input::placeholder,
+.search-box input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-box button {
+  background: #00d5ff;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-box button:hover {
+  background: #00a3cc;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 3px solid #fff;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.contacts {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.loader {
+  display: none;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+}
+
+.my-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+#myContact {
+  width: 500px;
+  background: #fff;
+  padding: 18px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+#myContact:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+#myContact h4 {
+  margin: 0;
+  font-size: 20px;
+}
+
+#myContact p {
+  margin: 3px 0 0;
+  font-size: 16px;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark #myContact {
+  background-color: #333;
+  color: #eee;
+}
+
+body.dark .fa-pen,
+body.dark .fa-trash {
+  color: #bbb;
+}
+
+#myContact i {
+  font-size: 18px;
+  margin-left: 15px;
+  cursor: pointer;
+  color: #636e72;
+  transition: color 0.2s ease;
+}
+
+#myContact i:hover {
+  color: #0984e3;
+}
+
+.loader {
+  display: none;
+  border: 4px solid #e0e0e0;
+  border-top: 4px solid #0984e3;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  animation: spin 0.9s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
